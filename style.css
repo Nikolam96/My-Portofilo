@@ -140,7 +140,7 @@ select {
 header,
 .two__columns,
 .three__columns {
-  padding: clamp(3rem, calc(6vw + 1rem), 5rem) 0;
+  padding: clamp(3rem, calc(6vw + 1rem), 6rem) 0;
 }
 
 header p,
@@ -241,11 +241,12 @@ nav {
 
   .nav--links li {
     padding-bottom: unset;
+    margin-right: 1em;
   }
 
   .nav--links li:nth-child(3) {
     margin-bottom: unset;
-    margin-right: 0.3em;
+    margin-right: 1.5em;
   }
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
