@@ -61,6 +61,7 @@ ol[role="list"] {
 a {
   text-decoration: none;
   color: var(--bc-white);
+  font-size: clamp(1.3rem, calc(2.4vw + 0.4rem), 1.6rem);
 }
 
 ul {
@@ -91,8 +92,14 @@ body {
   font-family: var(--ff-bold);
   font-optical-sizing: auto;
   color: var(--bc-white);
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -206,6 +213,11 @@ nav {
 
 .btn {
   padding: 0.3em 0.7em;
+  font-size: clamp(
+    var(--fs-medium),
+    calc(1.2vw + 0.5rem),
+    var(--fs-medium-paragraph)
+  );
 }
 
 .special {
@@ -262,20 +274,21 @@ header h1 {
 }
 
 header p {
-  font-size: clamp(21px, calc(1vw + 0.8rem), var(--fs-big-paragraph));
+  font-size: clamp(
+    var(--fs-medium-paragraph),
+    calc(1vw + 0.8rem),
+    var(--fs-big-paragraph)
+  );
 }
 
+.header--content,
 .big--header {
-  flex: 1;
-}
-.header--content {
   justify-content: center;
   align-items: center;
   flex: 1;
 }
 
 .header--content a {
-  font-size: clamp(20px, calc(1vw + 0.8rem), var(--fs-big-paragraph));
   text-transform: uppercase;
   padding: 0.3em 1.5em;
 }
@@ -383,7 +396,7 @@ footer {
 }
 
 footer h1 {
-  margin-bottom: clamp(2rem, calc(3.6vw + 0.6rem), 6rem);
+  margin-bottom: clamp(2rem, calc(3.6vw + 0.6rem), 4.5rem);
 }
 
 .footer--content h3 {
