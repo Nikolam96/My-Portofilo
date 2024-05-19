@@ -4,8 +4,14 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   line-height: 1;
+  margin: 0;
+}
+p {
+  margin: 0;
 }
 .bg-violet-400 {
   background-color: #2e323f;

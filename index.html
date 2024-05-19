@@ -1,275 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-violet-300  w-100 z-3" data-bs-theme="dark">
-    <div class="container-md">
-      <a class="navbar-brand icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-        aria-controls="offcanvasTop">
-        <img src="image/logo.svg" alt="Bootstrap" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav  nav-pills text-center ms-auto mb-2 mb-lg-0">
-          <li class="nav-item  ">
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
-          </li>
-          <li class="nav-item ms-lg-4">
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Sing in</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link active rounded-3 " data-bs-toggle="popover" title="Popover Header"
-              data-bs-content="Some content inside the popover" style="background-color: #a59678; color: white;">Sing
-              up</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="bg-violet-400 py-5 ">
-    <div class="container-md row  mx-auto text-center">
-      <h1 class="fs-900 fw-bolder px-lg-5 px-xxl-0 text-light col-xxl-7 text-xxl-start mb-5 g-0">
-        Responsive layouts
-        <span class="text-gold">don’t have to be a struggle</span>
-      </h1>
-      <div class="text-light col-xxl-5 my-auto text-xxl-start">
-        <p class="p-900 mb-4 px-6 nav-item">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button class="btn bg-gold btn-outline-secondary px-4 rounded-5 fw-bold text-light p-900 text-uppercase"
-          type="button" id="liveToastBtn">
-          i want to learn
-        </button>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5 bg-secondary-subtle">
-    <div class="container-md text-center g-0 column-gap-lg-5 row mx-auto p-180">
-      <div class="col-lg col-md-12 ">
-        <h2 class="text-gold fs-300 mb-4">Mobile-first</h2>
-        <p class="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam.
-        </p>
-      </div>
-      <div class="col-lg col-md-12 ">
-        <h2 class="text-gold fs-300 mb-4">Efficient</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam.
-        </p>
-      </div>
-      <div class="col-lg col-md-12 ">
-        <h2 class="text-gold fs-300 mb-4">Done right</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5">
-    <div class="container-md row mx-auto g-1 column-gap-5">
-      <div class="card text-center text-gold col-xxl-7">
-        <h2 class="card-header fs-360">It doesn’t have to be so hard</h2>
-        <img src="/image/the-image.jpg" class="img img-fluid" alt="img" />
-        <p class="card-footer text-dark">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam.
-        </p>
-      </div>
-
-      <div class="py-5 py-xxl-0 col-xxl-4 ms-auto row column-gap-3 align-self-start row-gap-xxl-3 g-1">
-        <div class="card bg-violet-300 text-light text-center mb-3 mb-md-0 col-sm-12 col-md col-xxl-12">
-          <h2 class="card-header py-3">Break it down</h2>
-          <p class="card-body nav-color">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="card bg-violet-300 text-light text-center mb-3 mb-md-0 col-sm-12 col-md col-xxl-12">
-          <h2 class="card-header py-3">Work your way up</h2>
-          <p class="card-body nav-color">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="card bg-violet-300 text-light text-center col-sm-12 col-md col-xxl-12">
-          <h2 class="card-header py-3">Work your way up</h2>
-          <p class="card-body nav-color">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-violet-300 py-5">
-    <div class="container-md text-center g-5  g-lg-0 mx-auto">
-      <h1 class="fs-600 mb-5 text-center text-light">Just scratching the surface</h1>
-      <div class="row column-gap-xl-2 g-0 nav navbar-dark" data-bs-theme="dark">
-        <div class="col-sm-6 mb-4 mb-md-5 mb-l-0 col-lg text-light-emphasis">
-          <h3 class="text-gold">About our company</h3>
-          <p class="nav-color">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam.
-          </p>
-        </div>
-        <div class="col-sm-6 col-lg mb-4 mb-md-0">
-          <h3 class="text-gold ">Getting around</h3>
-          <ul class="list-unstyled list list-group navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link ">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link ">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link ">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-lg mb-4 mb-md-0">
-          <h3 class="text-gold">Other things</h3>
-          <ul class="list-unstyled navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link ">Lorem ipsum</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link ">dolor</a>
-            </li>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link ">sit amet</a></li>
-            <li class="nav-item"><a href="#" class="nav-link ">consectetur</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-lg mb-4 mb-md-0">
-          <h3 class="text-gold">And more</h3>
-          <ul class="list-unstyled navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link ">Lorem ipsum</a></li>
-            <li class="nav-item"><a href="#" class="nav-link ">dolor</a></li>
-            <li class="nav-item"><a href="#" class="nav-link ">sit amet</a></li>
-            <li class="nav-item"><a href="#" class="nav-link ">consectetur</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium provident enim minus animi veritatis
-          consequuntur itaque minima quis ex cumque est corrupti perferendis, modi adipisci nisi dolor perspiciatis ad
-          ducimus?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Offcanvas -->
-  <div class="offcanvas offcanvas-top h-50" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title text-gold mx-auto" id="offcanvasTopLabel">Responsive layouts don’t have to be a
-        struggle</h1>
-    </div>
-
-    <div class="offcanvas-body">
-      <section class="py-5 bg-secondary-subtle">
-        <div class="container-md text-center g-0 column-gap-lg-5 row mx-auto p-180">
-          <div class="col-lg col-md-12 ">
-            <h2 class="text-gold fs-300 mb-4">Mobile-first</h2>
-            <p class="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam.
-            </p>
+  <body>
+    <div class="d-flex flex-column min-vh-100">
+      <nav class="navbar mx-auto container-md navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bolder" href="#"
+            ><img src="/image/logo.svg" alt="" srcset=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav navbar-nav mb-2 text-center mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link btn btn-light" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-light" href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-light" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-light" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-lg col-md-12 ">
-            <h2 class="text-gold fs-300 mb-4">Efficient</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam.
-            </p>
+        </div>
+      </nav>
+
+      <section
+        class="container-md m-auto row justify-content-center column-gap-4 g-0"
+      >
+        <div class="col-7 mb-3 col-lg-4 rounded-5">
+          <img
+            src="./assets/profile-pic.png"
+            alt="John Doe profile picture"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-4 col-12 g-0 text-center align-content-lg-center">
+          <p class="fw-bold h4 card-header-tabs mb-3">Hello, I'm</p>
+          <span
+            class="bg-black d-inline-block p-3 mb-0 px-5 h1 rounded-4 text-light"
+            >John Doe</span
+          >
+          <p class="h2 my-3 text-secondary-emphasis">Frontend Developer</p>
+          <div class="d-flex column-gap-2 justify-content-center">
+            <button
+              class="btn btn-dark"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-light" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
           </div>
-          <div class="col-lg col-md-12 ">
-            <h2 class="text-gold fs-300 mb-4">Done right</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam
-            </p>
+          <div class="d-flex justify-content-center column-gap-4 my-4">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="img-fluid col-1"
+              onclick="location.href='https://linkedin.com/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="img-fluid col-1"
+              onclick="location.href='https://github.com/'"
+            />
           </div>
         </div>
       </section>
     </div>
-  </div>
 
-  <!-- Toast -->
-  <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <img src="..." class="rounded me-2" alt="...">
-        <strong class="me-auto">Bootstrap</strong>
-        <small>11 mins ago</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    <section
+      class="text-center container mx-auto py-4 g-4 min-vh-100 position-relative"
+      id="about"
+    >
+      <div class="text-center">
+        <p class="text-secondary" style="font-size: 20px">Get To Know More</p>
+        <h1 class="h1 fw-bolder" style="font-size: 55px">About Me</h1>
       </div>
-      <div class="toast-body">
-        Hello, world! This is a toast message.
+
+      <div class="row">
+        <div
+          class="col-lg-5 col-6 mb-4 mb-lg-0 mx-auto align-content-center justify-content-center"
+        >
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="rounded-5 img-thumbnail"
+          />
+        </div>
+        <div
+          class="col-12 col-lg align-content-center justify-content-center position-relative"
+        >
+          <div class="row column-gap-3 mb-lg-4 g-0">
+            <div
+              class="col-md col-12 card d-flex justify-content-center mb-3 mb-lg-0 py-2"
+            >
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="img-fluid mx-auto"
+                style="width: 40px"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div
+              class="col-md col-12 card d-flex justify-content-center mb-3 mb-lg-0 py-2"
+            >
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="img-fluid mx-auto"
+                style="width: 40px"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="col-12 card g-0">
+            <p class="card-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="position-absolute d-none d-lg-block"
+            style="width: 40px; bottom: -50px; right: -10px; cursor: pointer"
+            onclick="location.href='./#experience'"
+          />
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <script>
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-      toastTrigger.addEventListener('click', () => {
-        const toast = new bootstrap.Toast(toastLiveExample)
+    <section
+      class="container pt-3 min-vh-100 position-relative"
+      id="experience"
+    >
+      <div class="mb-5 text-center">
+        <p
+          style="font-size: 20px"
+          class="bg-dark d-inline-block text-light px-4 py-2 rounded-3"
+        >
+          Explore My
+        </p>
+        <h1 class="h1 fw-bolder" style="font-size: 60px">Experience</h1>
+      </div>
+      <div class="row column-gap-5 container-fluid g-0 pt-lg-5">
+        <div
+          class="card text-start col-12 col-lg mb-5 mb-lg-0 row mx-auto mx-md-0 py-4 py-lg-5 text-dark"
+          style="background-color: rgba(0 0 0/ 0.03)"
+        >
+          <h2 class="text-center mb-4 mb-lg-5">Frontend Development</h2>
+          <div class="row gap-4 justify-content-center">
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>HTML</h5>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>CSS</h5>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>SASS</h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>JavaScript</h5>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>TypeScript</h5>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>Bootstrap</h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////// -->
+        <div
+          class="card text-start col-12 col-lg row mx-auto mx-md-0 py-4 py-lg-5"
+        >
+          <h2 class="text-center mb-4 mb-lg-5">Backend Development</h2>
+          <div class="row gap-4 justify-content-center">
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>MongoDB</h5>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>Node</h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>Express</h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class=""
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>Git</h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
 
-        toast.show()
-      })
-    }
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-  </script>
-</body>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class=""
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>Mongoose</h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article class="col-7 ps-5 col-sm-5 d-flex column-gap-2">
+              <div>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class=""
+                  style="width: 25px"
+                />
+              </div>
+              <div>
+                <h5>MySQL</h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="position-absolute d-none d-lg-block"
+        style="width: 40px; bottom: 50px; right: 0px; cursor: pointer"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects" class="min-vh-100">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+              src="./assets/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+              src="./assets/project-2.png"
+              alt="Project 2"
+              class="project-img"
+            /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+              src="./assets/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    /> -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <!-- <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        /> -->
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
 
+    <script>
+      const toastTrigger = document.getElementById("liveToastBtn");
+      const toastLiveExample = document.getElementById("liveToast");
+      if (toastTrigger) {
+        toastTrigger.addEventListener("click", () => {
+          const toast = new bootstrap.Toast(toastLiveExample);
+
+          toast.show();
+        });
+      }
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
 </html>
